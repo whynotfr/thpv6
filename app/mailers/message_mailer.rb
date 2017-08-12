@@ -7,7 +7,10 @@ class MessageMailer < ApplicationMailer
   #
   def contact_me(message)
     @greeting = "Hi"
-
-    mail to: "bonjour@thehackingproject.org"
+    @body = message.body
+    mail(
+    	to: "bonjour@thehackingproject.org", from: 'charles@thehackingproject.org'
+    	delivery_method_options: {api_key: 'ed9f24040f5022c12d434dd1413432fc', secret_key: 'abc390060a9cded9516ced2a67c81ba3'}
+    	)
   end
 end

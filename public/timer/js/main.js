@@ -1,7 +1,7 @@
 (function($){
     $.fn.scrollingTo = function( opts ) {
         var defaults = {
-            animationTime : 1000,
+            animationTime : 200,
             easing : '',
             callbackBeforeTransition : function(){},
             callbackAfterTransition : function(){}

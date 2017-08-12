@@ -1,18 +1,23 @@
 class MessagesController < ApplicationController
+  def new
+  	@message = Message.new
+  end
 
-def new
-	@message = Message.new
-end
 
-def create
-    message_params = params.require(:message).permit(:first_name, :last_name, :email, :body)
-    @message = Message.new message_params
+  def create
+    @message = Message.new(message_params)
 
     if @message.valid?
-      redirect_to contact_path, notice: "Message received, thanks!"
+      MessageMailer.contact_me(@message).deliver_now
+      redirect_to contact_path, notice: "Merci pour ton message, on te répondra très vite."
     else
       render :new
     end
-end
+  end
 
+  private
+
+  def message_params
+    params.require(:message).permit(:first_name, :last_name, :email, :body)
+  end
 end
