@@ -43,6 +43,10 @@ a:hover {
   color: #727272;
   line-height: 20px;
 }
+
+#formulaire {
+  margin-top: 30%;
+}
 .title {
   font-size: 30px;
   line-height: 1.1;

@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   get '/cursus', 		to: 'static#cursus'
   get '/faq', 			to: 'static#faq'
   get '/philosophie', 	to: 'static#philosophie'
-  get '/contact', 		to: 'static#contact'
   get '/inscription',	to: 'static#inscription'
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/contact', to: 'messages#new'
+  post '/contact', to: 'messages#create'
 end
