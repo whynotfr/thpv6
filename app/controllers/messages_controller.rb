@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       MessageMailer.contact_me(@message).deliver_now
-      redirect_to contact_path, notice: "Merci pour ton message, on te répondra très vite."
+      redirect_to contact_path, notice: "Merci pour ton message, Il a bien été envoyé on te répondra très vite."
     else
       render :new
     end

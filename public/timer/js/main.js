@@ -1,3 +1,6 @@
+ 
+
+
 (function($){
     $.fn.scrollingTo = function( opts ) {
         var defaults = {
@@ -108,11 +111,4 @@ $(".fancybox").fancybox({
 
 
 
-
-
-
- 
-
-
-
-
+     

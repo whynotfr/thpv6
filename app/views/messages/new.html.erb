@@ -1,19 +1,111 @@
 
+        <!-- 
+        ================================================== 
+            Contact Section Start
+        ================================================== -->
+        <section id="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block">
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contactez-nous</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                                Une quesrtion? Un point à éclaircir? Nous serons heureux de te répondre
+                            </p>
+                            <div class="contact-form">
+                                
+                        		<p style="color: green; font-size: 18px; font-weight: 900;"><%= notice %></p>
+                        		
+                        		<br>
+                        		<br>
+
+								
+								<%= form_for @message, url: contact_path do |f| %>
+								  
+								  <%= @message.errors.full_messages.join(', ') %>
+								  <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+								  <%= f.text_field :first_name, placeholder: 'Prenom',class: "form-control" %>
+								  </div>
+								  <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+								  <%= f.text_field :last_name, placeholder: 'Nom',class: "form-control" %>
+								  </div>
+								  <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+								  <%= f.email_field :email, placeholder: 'email',class: "form-control" %>
+								  </div>
+								  <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+								  <%= f.text_area :body, placeholder: 'Message',class: "form-control", id: "message" %>
+								  </div>
+								  
+								  <%= f.submit 'Send'%>
+								  
+								  <% end %>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                         <div class="map-area">
+                            <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Nous trouver?</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                                Nous sommes partout à la fois. Paris, Marseille, Lyon, Lille, Bordeaux sont des villes où nous sommes comme chez nous. Nous sommes nomades.
+                                
+                            </p>
+                          	<div id="map" style=" height: 400px; width: 555px;">
+								<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyr4bpHn6kpIZnx10ruKC1QPx7ZvnoXx8&callback=initMap"></script>   
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row address-details">
+                    <div class="col-md-4">
+                        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
+                            <i class="ion-ios-location-outline"></i>
+                            <p>47 rue du caire <br>75002 Paris</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+                            <i class="ion-ios-email-outline"></i>
+                            <p>Un seul email pour nous joindre:<br>bonjour@thehackingproject.org</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                            <i class="ion-ios-telephone-outline"></i>
+                            <p>Téléphone<br>06 95 46 60 80</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
 
 
 
-<div id="formulaire">
-<%= form_for @message, url: contact_path do |f| %>
-  <%= notice %>
-  <%= @message.errors.full_messages.join(', ') %>
-  <%= f.text_field :first_name, placeholder: 'first name' %>
-  <%= f.text_field :last_name, placeholder: 'last name' %>
-  <%= f.email_field :email, placeholder: 'email' %>
-  <%= f.text_area :body, placeholder: 'body' %>
-  <%= f.submit 'Send' %>
-<% end %>
+        <!-- 
+        ================================================== 
+            Call To Action Section Start
+        ================================================== -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Vous n'en pouvez plus de lire notre site? Envie de sauter le pas? </h1>
+                            
+                            <%= link_to ("Je veux m'inscrire"), inscription_path, class:"btn btn-default btn-contact wow fadeInDown"%>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
 
-</div>
+
+                           
+
+
+
+
