@@ -1,10 +1,19 @@
- 
+ //Gestion du process d'inscritpion.
+jQuery(document).ready(function(){
+
+$("#bouton-cgv").click(function(){
+    $("#inscription-init").fadeOut("slow");
+        $("#survey").css("display", "block");
+            $(window).scrollTop(0);
+});
+});
+
 
 
 (function($){
     $.fn.scrollingTo = function( opts ) {
         var defaults = {
-            animationTime : 200,
+            animationTime : 50,
             easing : '',
             callbackBeforeTransition : function(){},
             callbackAfterTransition : function(){}
@@ -64,7 +73,7 @@ $(document).ready(function(){
 
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 50) {
+        if ($(window).scrollTop() > 20) {
             $(".navbar-brand a").css("color","#fff");
             $("#top-bar").removeClass("animated-header");
         } else {
@@ -91,10 +100,10 @@ $(".fancybox").fancybox({
     padding: 0,
 
     openEffect : 'elastic',
-    openSpeed  : 450,
+    openSpeed  : 50,
 
     closeEffect : 'elastic',
-    closeSpeed  : 350,
+    closeSpeed  : 550,
 
     closeClick : true,
     helpers : {
@@ -107,6 +116,9 @@ $(".fancybox").fancybox({
             }
         }
     }
+
+
+
 });
 
 
