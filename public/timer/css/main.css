@@ -1105,17 +1105,19 @@ div.col-sm-9 div {
       font-size: 10px;
   }
 
-
+#inscriion-init {
+  margin top: 10%;
+}
 
 #textcgv {
-margin-top: 10px;
-border: none;
-padding: 5px;
-font: 24px/36px sans-serif;
-width: 80%;
-height: 300px;
-overflow: scroll;
-overflow-x: hidden;
+  margin-top: 10px;
+  border: none;
+  padding: 5px;
+  font: 24px/36px sans-serif;
+  width: 80%;
+  height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 #dbard {
