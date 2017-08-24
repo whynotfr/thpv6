@@ -1142,6 +1142,7 @@ overflow-x: hidden;
   white-space: normal;
   margin-left: 18vw;
   margin-right: 15vw;
+  display: hide;
 }
 
 #paiement {
