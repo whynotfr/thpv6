@@ -1135,7 +1135,7 @@ div.col-sm-9 div {
   margin-left: 13%;
   width: 75%;
 }
-#survey{
+#survey {
   width: 100%; 
   height: 1300px;
   display: none;
@@ -1154,7 +1154,8 @@ div.col-sm-9 div {
   display: none;
   text-align: center;
 }
-#bouton-cgv{
+
+#bouton-cgv {
   white-space: normal;
   margin-left: 18vw;
   margin-right: 15vw;
