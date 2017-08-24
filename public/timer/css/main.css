@@ -1138,8 +1138,22 @@ overflow-x: hidden;
   height: 1300px;
   display: none;
 }
+#bouton-cgv{
+  white-space: normal;
+  margin-left: 18vw;
+  margin-right: 15vw;
+}
 
+#paiement {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
 
+#bloc-paiement {
+  color: #222831;
+  font-weight: 900;
+}
 
 @media screen and (max-width: 810px) {
     #textcgv  {

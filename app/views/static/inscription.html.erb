@@ -213,34 +213,47 @@
 
 	
 
-		<button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" autocomplete="off" style="margin-left: 15%;" id="bouton-cgv">
+		<button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" autocomplete="off" id="bouton-cgv">
 			J'accepte les conditions générales et souhaite procéder au paiement d'enregistrement de 1€ et à mon inscription pour The Hacking Project
 		</button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p style="text-align: center; width: 100%;">cliquer sur le bouton vert pour procéder au règlement</p>
+		<br>
+		<br>
+		<br>
 
 
-	
 
+</div>
+<div id="paiement" >
+		<p id="bloc-paiement">Clique sur le bouton ci-dessous pour procéder au règlement des 1€ necessaire à l'enregistrement de ta carte et <br>procéder au remplissage du questionnaire d'inscription.</p>
 
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+		    <%= form_tag charges_path do %>
+		      <article>
+		        <% if flash[:error].present? %>
+		          <div id="error_explanation">
+		            <p><%= flash[:error] %></p>
+		          </div>
+		        <% end %>
+		        <label class="amount">
+		        </label>
+		      </article>
+		      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+		              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+		              data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+		              data-name="The Hacking Project"
+		              data-description="Enregistrement de votre carte bancaire"
+		              data-amount="100"
+		              data-locale="auto"
+		              data-currency="eur">
+		      </script>
+		    <% end %>
+		 
 </div>
 
 <embed src="https://docs.google.com/forms/d/e/1FAIpQLSfuQMsLatMWgQjGZhM9jryg8_tbZbcoY3ur6Qy4i9KS1ugfdw/viewform" id="survey"></embed>
 
 
-<content>
-		<div id="texte-cgv">
-
-			
-		</div>
-		<div id="money">
-			
-		</div>
-
-
-</content>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+	resources :charges
   root 'static#home' 
   get '/cursus', 		to: 'static#cursus'
   get '/faq', 			to: 'static#faq'
