@@ -1140,12 +1140,7 @@ div.col-sm-9 div {
   height: 1300px;
   display: none;
 }
-#bouton-cgv{
-  white-space: normal;
-  margin-left: 18vw;
-  margin-right: 15vw;
-  display: none;
-}
+
 
 #paiement {
   display: none;
@@ -1157,8 +1152,14 @@ div.col-sm-9 div {
   color: #222831;
   font-weight: 900;
   display: none;
+  text-align: center;
 }
-
+#bouton-cgv{
+  white-space: normal;
+  margin-left: 18vw;
+  margin-right: 15vw;
+  display: none;
+}
 
 
 @media screen and (max-width: 810px) {
