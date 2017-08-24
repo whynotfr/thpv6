@@ -1156,7 +1156,10 @@ div.col-sm-9 div {
 #bloc-paiement {
   color: #222831;
   font-weight: 900;
+  display: none;
 }
+
+
 
 @media screen and (max-width: 810px) {
     #textcgv  {
