@@ -1105,8 +1105,8 @@ div.col-sm-9 div {
       font-size: 10px;
   }
 
-#inscriion-init {
-  margin top: 10%;
+#inscription-init {
+  margin-top: 10em;
 }
 
 #textcgv {
@@ -1122,6 +1122,7 @@ div.col-sm-9 div {
 
 #dbard {
   position: relative;
+  margin-top: 3vw;
 }
 
 
@@ -1142,7 +1143,9 @@ div.col-sm-9 div {
 }
 
 
-
+#paiement {
+  margin-top: 10em;
+}
 
 #bloc-paiement {
   color: #222831;
@@ -1155,7 +1158,8 @@ div.col-sm-9 div {
   white-space: normal;
   margin-left: 18vw;
   margin-right: 15vw;
-  display: none;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 
