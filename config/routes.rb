@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	resources :charges
+  resources :charges
   root 'static#home' 
   get '/cursus', 		to: 'static#cursus'
   get '/faq', 			to: 'static#faq'
@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/contact', to: 'messages#new'
   post '/contact', to: 'messages#create'
+
+  get '/charges', to: 'charges#create'
 end

@@ -197,10 +197,34 @@
 
 <div id="paiement" style="display: none; width: 100%; text-align: center; margin-top: 15em;" >
 		<p>Clique sur le bouton ci-dessous pour procéder au règlement des 1€ necessaire à l'enregistrement de ta carte et <br>procéder au remplissage du questionnaire d'inscription.</p> 
+
+		 <div id="center-div">
+    		<%= form_tag charges_path do %>
+      		<article>
+	        	<% if flash[:error].present? %>
+	          	<div id="error_explanation">
+	            	<p><%= flash[:error] %></p>
+	          	</div>
+	        	<% end %>
+	        	<label class="amount">
+	        	</label>
+      		</article>
+
+      		<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+              data-name="The Hacking Project"
+              data-description="😊 🙌 💻"
+              data-amount="100"
+              data-locale="auto"
+              data-currency="eur">
+      		</script>
+    <% end %>
+  </div>
 </div>
 
 
 
-<embed src="https://docs.google.com/forms/d/e/1FAIpQLSfuQMsLatMWgQjGZhM9jryg8_tbZbcoY3ur6Qy4i9KS1ugfdw/viewform" id="googleformthp">
+
 
 

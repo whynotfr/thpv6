@@ -31,10 +31,6 @@
   width: 75%;
 }
 
-
-
-
-
 #bloc-paiement {
   color: #222831;
   font-weight: 900;
@@ -50,11 +46,7 @@
   margin-bottom: 5vw;
 }
 
-#googleformthp {
-  width: 100%; 
-  height: 1300px;
-  display: none;
-}
+
 
 @media screen and (max-width: 810px) {
     #textcgv  {

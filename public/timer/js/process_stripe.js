@@ -7,9 +7,5 @@ $("#bouton-cgv").click(function(){
         	$("#paiement").css("display", "block");
             	$(window).scrollTop(0);
 });
-//deuxième partie avec paiement
-
-//troisième partie avec remplissage questionnaire
-
-//Félicitation pour notre nousveau moussaillon
+//c'est redirigé vers create.htl.erb
 });

@@ -18,8 +18,5 @@ class StaticController < ApplicationController
   def inscription
   end
 
-  def realize
-  end
-
   
 end
