@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   resources :charges
   root 'static#home' 
   get '/cursus', 		to: 'static#cursus'
@@ -10,5 +12,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'messages#new'
   post '/contact', to: 'messages#create'
 
-  get '/charges', to: 'charges#create'
+  
+  get '/survey', to: 'surveys#new'
+  post '/survey', to: 'surveys#create'
 end
